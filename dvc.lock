@@ -1,0 +1,33 @@
+schema: '2.0'
+stages:
+  create_dataset:
+    cmd: python create_dataset.py --config=params.yaml
+    deps:
+    - path: create_dataset.py
+      md5: bef867a769c012405e8167a2b44c4a83
+      size: 942
+  training:
+    cmd: python src/tool/training.py --config=params.yaml
+    deps:
+    - path: src/tool/training.py
+      md5: 5862e8e66a075f970752dff2f9df6b2d
+      size: 772
+    outs:
+    - path: ./weights/ocr_model.pth
+      md5: 03d0e78579b2e531f0b9c21fb475c186
+      size: 89581961
+  val:
+    cmd:
+    - python src/tool/evaluate.py --config=params.yaml
+    deps:
+    - path: src/tool/evaluate.py
+      md5: 802b50446549f50f79fb9ce845127b5b
+      size: 2404
+    params:
+      params.yaml:
+        model_name: src/config/vgg-seq2seq.yml
+    outs:
+    - path: reports
+      md5: d751713988987e9331980363e24189ce.dir
+      size: 0
+      nfiles: 0

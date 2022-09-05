@@ -1,0 +1,8 @@
+{
+    "step": 1,
+    "iter": 1000,
+    "Train loss": 0.5882692743431438,
+    "Val loss": 0.5882692743431438,
+    "Acc full sequence": 0.8459595959595959,
+    "Acc per character": 0.9404776096343994
+}
