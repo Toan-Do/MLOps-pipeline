@@ -1,0 +1,7 @@
+iter: 000200 - train loss: 2.030 - lr: 9.69e-04 - load time: 1.17 - gpu time: 70.90
+iter: 000400 - train loss: 0.878 - lr: 7.48e-04 - load time: 0.97 - gpu time: 72.56
+iter: 000500 - valid loss: 0.665 - acc full seq: 0.6490 - acc per char: 0.8532
+iter: 000600 - train loss: 0.742 - lr: 4.11e-04 - load time: 0.75 - gpu time: 77.89
+iter: 000800 - train loss: 0.665 - lr: 1.16e-04 - load time: 0.88 - gpu time: 77.75
+iter: 001000 - train loss: 0.646 - lr: 7.05e-09 - load time: 0.94 - gpu time: 76.00
+iter: 001000 - valid loss: 0.588 - acc full seq: 0.8460 - acc per char: 0.9405

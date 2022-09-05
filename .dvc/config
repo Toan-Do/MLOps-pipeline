@@ -1,0 +1,4 @@
+[core]
+    remote = dataset_val
+['remote "dataset_val"']
+    url = gs://dvtoan7997/dataset_val2
